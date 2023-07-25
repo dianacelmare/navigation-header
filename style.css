@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+:root {
+  --btn-orange: #f29f22;
+  --btn-hover-orange: #f67d0b;
+  --btn-active-orange: #d77700;
+  --white: #fff;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80");
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 12px;
+}
+
+nav > ul {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links li {
+  list-style-type: none;
+  margin: 0px 25px;
+}
+
+#hero {
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+.action_btn {
+  background-color: var(--btn-orange);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: none;
+}
+
+.action_btn:active {
+  transform: scale(1.05);
+  background-color: var(--btn-active-orange);
+}
+
+.action_btn:hover {
+  background-color: var(--btn-hover-orange);
+}
